@@ -1,6 +1,6 @@
 return {
   'm4xshen/smartcolumn.nvim',
-  event = { 'InsertEnter', 'User AstroFile' },
+  event = { 'InsertEnter' },
   opts = {
     disabled_filetypes = {
       'alpha',
