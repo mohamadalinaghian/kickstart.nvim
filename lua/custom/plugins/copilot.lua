@@ -26,8 +26,8 @@ return {
       trigger_on_accept = true,
       keymap = {
         accept = '<C-u>',
-        accept_word = 'ww',
-        accept_line = 'll',
+        accept_word = '<C-t>',
+        accept_line = '<C-g>',
         next = ']]',
         prev = '[[',
         dismiss = '<C-]>',
