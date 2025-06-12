@@ -12,3 +12,5 @@ set('i', '<C-b>', '<Home>')
 
 set('n', '<Tab>', '<cmd> bnext<CR>', { silent = true, noremap = false })
 set('n', '<C-a>', 'ggVG', { silent = true, noremap = false })
+set('n', '<C-c>', '<cmd> %y<CR>', { silent = true, noremap = false, desc = 'Copy to clipboard' })
+set('n', '<Leader>g', '<cmd> LazyGit<CR>', { silent = true, noremap = false, desc = 'Open LazyGit' })
