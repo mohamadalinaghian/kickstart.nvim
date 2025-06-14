@@ -23,9 +23,6 @@ vim.o.smartcase = true
 
 vim.o.signcolumn = 'yes'
 
-vim.o.splitright = true
-vim.o.splitbelow = true
-
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
@@ -42,5 +39,12 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('highlight-yank', { clear = true }),
   callback = function()
     vim.hl.on_yank()
+  end,
+})
+
+vim.api.nvim_create_autocmd({ 'VimEnter', 'WinEnter', 'BufWinEnter', 'TermOpen' }, {
+  callback = function()
+    vim.o.splitbelow = false
+    vim.o.splitright = false
   end,
 })

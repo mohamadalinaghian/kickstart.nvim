@@ -38,10 +38,3 @@ require('lazy').setup(
 
 require 'keymap'
 require 'options'
-
-vim.api.nvim_create_autocmd({ 'VimEnter', 'WinEnter', 'BufWinEnter', 'TermOpen' }, {
-  callback = function()
-    vim.o.splitbelow = false
-    vim.o.splitright = false
-  end,
-})
