@@ -30,7 +30,7 @@ vim.o.inccommand = 'split'
 
 vim.o.cursorline = true
 
-vim.o.scrolloff = 25
+vim.o.scrolloff = 15
 
 vim.o.confirm = true
 
